@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#415A42</color>
+    <color name="colorPrimaryDark">#354B36</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--<color name="bgBottomNavigation">#4CAF50</color>-->
+    <color name="bgBottomNavigation">#415A42</color>
+
+    <color name="snackBackground">#FFCFBEB4</color>
+    <color name="Wheat">#DBA621</color>
+    <color name="scoreBgView"/>
+
+</resources>

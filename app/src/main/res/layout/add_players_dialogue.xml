@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="dialougeBinding"
+                  type="com.uma.playsmart.ui.scorer.fragment.home.dialougeFragment.CreateBatsmanVM"/>
+    </data>
+    <LinearLayout
+            android:id="@+id/root_dialouge"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:id="@+id/etxtDialougeBatsman1"
+                style="@style/dialugeEtxtStyle"
+                android:hint="@string/batsman1Name"/>
+
+        <EditText
+                android:id="@+id/etxtDialougeBatsman2"
+                style="@style/dialugeEtxtStyle"
+                android:hint="@string/batsman2Name"/>
+
+        <EditText
+                android:id="@+id/etxtDialougeBowler"
+                style="@style/dialugeEtxtStyle"
+                android:hint="@string/bowlerName"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="@dimen/dp10"
+                      android:layout_marginLeft="@dimen/dp14"
+                      android:layout_marginRight="@dimen/dp14">
+
+            <Button
+                    android:id="@+id/btnDialougeReset"
+                    style="@style/dialougeBtnStyle"
+                    tools:ignore="ButtonStyle"
+                    android:text="@string/reset"
+                    android:onClick="@{()->dialougeBinding.resetButtonClick()}"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:layout_marginEnd="@dimen/dp20"/>
+            <Button
+                    android:id="@+id/btnDialougeCreate"
+                    style="@style/dialougeBtnStyle"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:text="@string/create"
+                    tools:ignore="ButtonStyle"
+                    android:onClick="@{()->dialougeBinding.createBatsman()}"
+                    android:layout_marginStart="@dimen/dp20"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

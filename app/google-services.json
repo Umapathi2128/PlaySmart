@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "649484686502",
+    "firebase_url": "https://playsmart-e357f.firebaseio.com",
+    "project_id": "playsmart-e357f",
+    "storage_bucket": "playsmart-e357f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649484686502:android:7139fb65436a357b",
+        "android_client_info": {
+          "package_name": "com.uma.playsmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649484686502-bfjupmvmt13ihhmolbl95m7961ngtae4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uma.playsmart",
+            "certificate_hash": "5292b51cd58ae94aef0c0ab0fbe16b7f3fd80f05"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCta-zrdIB_mWysDnY9R0B-_PRVF1FSFRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649484686502-ci6scpg34hpnbvbnnlh7oks06jf5tm3j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

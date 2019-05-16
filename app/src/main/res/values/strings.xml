@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Play Smart</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="batting">Batting</string>
+    <string name="runs">R(B)</string>
+    <string name="fours">4s</string>
+    <string name="sixes">6s</string>
+    <string name="strikeRate">SR</string>
+
+    <string name="bowling">Bowling</string>
+    <string name="overs">O</string>
+    <string name="bowlerRuns">R</string>
+    <string name="wickets">W</string>
+    <string name="economy">E</string>
+    <string name="recent_balls">Recent balls :</string>
+
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="zero">0</string>
+    <string name="lbyes">lb</string>
+    <string name="byes">byes</string>
+    <string name="out">out</string>
+    <string name="wide">Wd</string>
+    <string name="noBall">Nb</string>
+    <string name="braces">(</string>
+    <string name="braces2">)</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <string name="noInternet">No Internet…</string>
+
+
+    <string name="user">User</string>
+    <string name="scorer">Scorer</string>
+    <string name="matchId">MatchID</string>
+    <string name="umpire">Umpire/Scorer</string>
+    <string name="teamA">TeamA</string>
+    <string name="teamB">TeamB</string>
+    <string name="matchPlace">Match place</string>
+    <string name="numberOfOvers">Total overs</string>
+    <string name="twTeam">Toss winning team</string>
+    <string name="decision">Toss decision</string>
+
+    <string name="matchIdHint">Enter Your MatchID</string>
+    <string name="umpireHint">Enter name of the Umpire/Scorer</string>
+    <string name="teamAHint">Enter name of the TeamA</string>
+    <string name="teamBHint">Enter name of the TeamB</string>
+    <string name="matchPlaceHint">Enter place of the match</string>
+    <string name="nofHint">Enter maximum overs per innings</string>
+    <string name="twTeamHint">Enter toss winner</string>
+    <string name="tossDecisionHint">Enter winner deecision</string>
+
+    <string name="reset">Reset</string>
+    <string name="create">Create</string>
+
+    <string name="batsman1Name">Enter first batsman name</string>
+    <string name="batsman2Name">Enter second batsman name</string>
+    <string name="bowlerName">Enter bowler name</string>
+
+</resources>

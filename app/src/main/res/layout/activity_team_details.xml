@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="teamDetailsBinding" type="com.uma.playsmart.ui.teamDetails.TeamDetailsVM"/>
+    </data>
+    <ScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+    >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+        >
+
+            <TextView
+                    android:id="@+id/txtMatchID"
+                    style="@style/teamDetailsTxt"
+                    android:text="@string/matchId"
+            />
+
+            <EditText
+                    android:id="@+id/etxtMatchID"
+                    style="@style/teamDetailsEtxt"
+                    android:hint="@string/matchIdHint"
+            />
+            <TextView
+                    android:id="@+id/txtUmpire"
+                    style="@style/teamDetailsTxt"
+                    android:text="@string/umpire"
+            />
+
+            <EditText
+                    android:id="@+id/etxtUmpire"
+                    style="@style/teamDetailsEtxt"
+                    android:hint="@string/umpireHint"
+            />
+            <TextView
+                    android:id="@+id/txtTeamA"
+                    style="@style/teamDetailsTxt"
+                    android:text="@string/teamA"
+            />
+
+            <EditText
+                    android:id="@+id/etxtTeamA"
+                    style="@style/teamDetailsEtxt"
+                    android:hint="@string/teamAHint"
+            />
+            <TextView
+                    android:id="@+id/txtTeamB"
+                    style="@style/teamDetailsTxt"
+                    android:text="@string/teamB"
+            />
+
+            <EditText
+                    android:id="@+id/etxtTeamB"
+                    style="@style/teamDetailsEtxt"
+                    android:hint="@string/teamBHint"
+            />
+            <TextView
+                    android:id="@+id/txtmathchPlace"
+                    style="@style/teamDetailsTxt"
+                    android:text="@string/matchPlace"
+            />
+
+            <EditText
+                    android:id="@+id/etxtMatchPlace"
+                    style="@style/teamDetailsEtxt"
+                    android:hint="@string/matchPlaceHint"
+            />
+            <TextView
+                    android:id="@+id/txtTossTeam"
+                    style="@style/teamDetailsTxt"
+                    android:text="@string/twTeam"
+            />
+
+            <RadioGroup
+                    android:id="@+id/radioGroup"
+                    style="@style/teamDetailsRG"
+            >
+                <RadioButton
+                        android:id="@+id/teamA"
+                        style="@style/teamDetailsRB"
+                        android:text="@string/teamA"/>
+                <RadioButton
+                        android:id="@+id/teamB"
+                        style="@style/teamDetailsRB"
+                        android:text="@string/teamB"/>
+
+            </RadioGroup>
+            <TextView
+                    android:id="@+id/txtTossDecision"
+                    style="@style/teamDetailsTxt"
+                    android:text="@string/decision"
+
+            />
+            <RadioGroup
+                    android:id="@+id/radioGroupdecision"
+                    style="@style/teamDetailsRG"
+            >
+                <RadioButton
+                        android:id="@+id/bat"
+                        style="@style/teamDetailsRB"
+                        android:text="Bat"/>
+                <RadioButton
+                        android:id="@+id/bowl"
+                        style="@style/teamDetailsRB"
+                        android:text="bowl"/>
+
+            </RadioGroup>
+
+            <TextView
+                    android:id="@+id/txtOvers"
+                    style="@style/teamDetailsTxt"
+                    android:text="@string/numberOfOvers"
+            />
+
+            <EditText
+                    android:id="@+id/etxtOvers"
+                    style="@style/teamDetailsEtxt"
+                    android:inputType="number"
+                    android:hint="@string/nofHint"
+            />
+            <TextView
+                    android:id="@+id/txtError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:layout_marginTop="@dimen/dp10"/>
+            <Button
+                    android:id="@+id/btnSaveData"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Save data"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:textAllCaps="false"
+                    android:onClick="@{()->teamDetailsBinding.saveDataIntoFirebase()}"
+            />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

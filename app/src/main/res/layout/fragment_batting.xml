@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="BattingBinding" type="com.uma.playsmart.ui.scorer.fragment.batting.BattingVM"/>
+    </data>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/dp10"
+            tools:context=".ui.scorer.fragment.batting.BattingFragment">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      >
+
+            <Button
+                    android:id="@+id/btnFirst"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/btn_score_bg"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp15"
+            />
+            <Button
+                    android:id="@+id/btnSecond"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/btn_score_bg"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/BattingRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        />
+
+    </LinearLayout>
+</layout>
